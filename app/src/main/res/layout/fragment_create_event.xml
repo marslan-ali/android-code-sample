@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/title"
+                style="@style/App_EditText_Event"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bitter_italic"
+                android:gravity="center"
+                android:hint="Message"
+                android:autoLink="web|phone"
+                android:linksClickable="true"
+                android:textColorLink="@color/blue"
+                android:inputType="textMultiLine" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/contact_text" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:theme="@style/contactListDDStyle"
+            android:fontFamily="@font/bitter_italic"
+            android:drawSelectorOnTop="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/contact_text" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center|left"
+                    android:src="@drawable/icon_person_invied"/>
+
+
+                <EditText
+                    android:id="@+id/count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bitter_italic"
+                    android:hint="Set number of people"
+                    android:inputType="number"
+                    android:textColor="@color/contact_text"
+                    android:textColorHint="@color/contact_text"
+                    android:textCursorDrawable="@color/contact_text"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/contact_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|left"
+                    android:src="@drawable/iconlocation" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="50dp"
+                    style="@style/App_EditText_Event_icon"
+                    android:fontFamily="@font/bitter_italic"
+                    android:hint="Set Location"
+                    android:clickable="false"
+                    android:inputType="textMultiLine" />
+
+                <Switch
+                    android:id="@+id/location_switch"
+                    android:layout_width="wrap_content"
+                    android:checked="false"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|right" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/contact_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|left"
+                    android:src="@drawable/iconsetdate" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="50dp"
+                    style="@style/App_EditText_Event_icon"
+                    android:fontFamily="@font/bitter_italic"
+                    android:hint="Valid till"
+                    android:clickable="false"
+                    android:inputType="text" />
+
+                <Switch
+                    android:id="@+id/date_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:checked="false"
+                    android:layout_gravity="center|right" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/contact_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|left"
+                    android:src="@drawable/icontime" />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="50dp"
+                    style="@style/App_EditText_Event_icon"
+                    android:fontFamily="@font/bitter_italic"
+                    android:hint="Valid till"
+                    android:clickable="false"
+                    android:inputType="text" />
+
+                <Switch
+                    android:id="@+id/time_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:checked="false"
+                    android:layout_gravity="center|right" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/contact_text" />
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/i_pay"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/red"
+                android:checked="true"
+                android:fontFamily="@font/bitter_italic"
+                android:layoutDirection="rtl"
+                android:text="I will pay" />
+
+            <RadioButton
+                android:id="@+id/u_pay"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/red"
+                android:fontFamily="@font/bitter_italic"
+                android:layoutDirection="rtl"
+                android:text="You will pay" />
+
+            <RadioButton
+                android:id="@+id/b_pay"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/red"
+                android:checked="true"
+                android:fontFamily="@font/bitter_italic"
+                android:layoutDirection="rtl"
+                android:text="We both will pay" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_red"
+            android:fontFamily="@font/bitter_italic"
+            android:text="Create"
+            android:textColor="@android:color/white"
+            android:textCursorDrawable="@color/red" />
+
+    </LinearLayout>
+
+
+</ScrollView>

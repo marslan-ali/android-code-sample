@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Invited</string>
+
+
+    <string name="dialog_action_ok">OK</string>
+     <string name="dialog_error_title">Sorry</string>
+
+
+    <string name="splash_text">Personal networking redefined</string>
+
+    <string name="contact_text">Select contact for list</string>
+    <string name="update_text">Update contact for list</string>
+    <string name="list_name">Set list name here</string>
+    <string name="create" fontFamily="@font/bitter_italic">Create</string>
+    <string name="update" fontFamily="@font/bitter_italic">Update</string>
+    <string name="search" fontFamily="@font/bitter_italic">Search</string>
+    <string name="dor">Set Wedding Anniversary |\n Set Relation Anniversary</string>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="genderProfile">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="hint_wed">Hint: It is highly recommended that you provide date of anniversay for getting exclusive special discounts or even a free treat for you and your loved one on your special day from the top resturant in your city</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="dob_alert">* It is highly recommended that you provide date of birth for getting exclusive special discounts or even completely free dining offers from many of the top restaurants in your city</string>
+</resources>

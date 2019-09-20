@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/code_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/one"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_line"
+            android:fontFamily="@font/bitter_italic"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/contact_text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/two"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_line"
+            android:fontFamily="@font/bitter_italic"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/contact_text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/three"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_line"
+            android:fontFamily="@font/bitter_italic"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/contact_text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/four"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_line"
+            android:fontFamily="@font/bitter_italic"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/contact_text"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_area"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bitter_italic"
+        android:gravity="center"
+        android:text="Enter the 4-digit verification code that we sent to your phone"
+        android:textColor="@color/contact_text"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/send_again"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rounded_red"
+        android:fontFamily="@font/bitter_italic"
+        android:lines="1"
+        android:text="Send Again"
+        android:textColor="@android:color/white"
+        android:textCursorDrawable="@color/red" />
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_again"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bitter_italic"
+        android:gravity="center"
+        android:textColor="@color/contact_text"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

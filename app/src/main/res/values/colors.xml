@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#222222</color>
+    <color name="primary_dark">#000000</color>
+    <color name="gray">#ffdfdfdf</color>
+    <color name="red">#C72F24</color>
+    <color name="red_light">#ED6C50</color>
+    <color name="contact_text">#99000000</color>
+    <color name="green">#86e08b</color>
+    <color name="blue">#002bff</color>
+    <color name="red_icon">#E26362</color>
+    <color name="link">#0000EE</color>
+    <color name="white">#ffffff</color>
+    <color name="contact_textq">#bf000000</color>
+
+
+</resources>
