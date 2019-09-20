@@ -2,7 +2,7 @@
  * Class Module
  * @package     Application
  * @author      Arslan Ali
- * @email       shayansolutions@gmail.com
+ * @email       marslan.ali@gmail.com
  */
 package co.appdev.invited.ui.signin;
 
